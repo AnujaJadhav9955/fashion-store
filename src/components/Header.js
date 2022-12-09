@@ -17,10 +17,12 @@ const StyledNavLink = styled(NavLink)({
   },
   color: "#6B728E",
 });
+
 const StyledBox = styled(Box)({
   display: "flex",
   marginLeft: "auto",
 });
+
 const Header = () => {
   return (
     <AppBar style={{ background: "#F5F5F5" }}>

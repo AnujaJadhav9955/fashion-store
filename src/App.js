@@ -6,17 +6,18 @@ import Products from './Products';
 import SingleProduct from './SingleProduct';
 import Cart from './Cart';
 import Header from './components/Header';
-import MobileHeader from './components/MobileHeader';
-import {useTheme} from '@mui/material/styles';
-import { useMediaQuery } from '@mui/material';
+// import MobileHeader from './components/MobileHeader';
+// import {useTheme} from '@mui/material/styles';
+// import { useMediaQuery } from '@mui/material';
 
 function App() {
 
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down('md'));
+  // const theme = useTheme();
+  // const matches = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <Router>
-      {matches ? <MobileHeader/> : <Header/> }
+      {/* {matches ? <MobileHeader/> : <Header/> } */}
+      <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
