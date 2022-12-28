@@ -5,17 +5,18 @@ import { NavLink } from "react-router-dom";
 const GridContainer = styled(Grid) ({
 marginTop: '150px',
 width: '100%',
-paddingLeft: '200px',
+paddingLeft: '250px',
 paddingRight: '200px',
 alignItems: 'center',
 });
 
-const HeroSection = () => {
+const HeroSection = ({data}) => {
+  const {name} = data;
   return (
     <GridContainer container item >
         <Grid item xs={6}>
         <p>Welcome to </p>
-        <h1>Fashion Store</h1>
+        <h1>{name}</h1>
             <Button variant='contained'>SHOW NOW</Button>
         </Grid>
         <Grid item xs={6} style={{textAlign: 'center'}}>
