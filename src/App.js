@@ -6,17 +6,11 @@ import Products from './Products';
 import SingleProduct from './SingleProduct';
 import Cart from './Cart';
 import Header from './components/Header';
-// import MobileHeader from './components/MobileHeader';
-// import {useTheme} from '@mui/material/styles';
-// import { useMediaQuery } from '@mui/material';
+import Footer from './components/Footer';
 
 function App() {
-
-  // const theme = useTheme();
-  // const matches = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <Router>
-      {/* {matches ? <MobileHeader/> : <Header/> } */}
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -26,6 +20,7 @@ function App() {
         <Route path='/singleproduct/:id' element={<SingleProduct/>}/>
         <Route path='/cart' element={<Cart/>}/>
       </Routes>
+      <Footer/>
     </Router>    
   );
 }

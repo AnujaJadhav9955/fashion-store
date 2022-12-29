@@ -6,7 +6,7 @@ const Trusted = () => {
     <Box
       marginTop="50px"
       padding="20px 100px 20px 100px"
-      backgroundColor="#F5F5F5"
+      backgroundColor="#f7f8fd"
       display="flex"
       flexDirection="column"
     >

@@ -25,7 +25,7 @@ const StyledBox = styled(Box)({
 
 const Header = () => {
   return (
-    <AppBar style={{ background: "#F5F5F5" }}>
+    <AppBar style={{ background: "#f7f8fd" }}>
       <Toolbar>
         <StyledNavLink to="/">
           <img
